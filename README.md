@@ -6,4 +6,4 @@ Topics covered:
 - lists, tuples, dictionaries
 - functions and basic problem-solving
 
-This repo serves as a learning log and will continue to evolve as I practice more.
+This repo serves as a learning log and will continue to evolve as I practice more. 
