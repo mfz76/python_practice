@@ -1,23 +1,29 @@
-# check if the number is prime or not
+# find and print all prime numbers between 1 and n 
 
 while True:
     try:
         x = int(input("Enter the number:"))
-        if x <= 1 :
-            print("invalid input!")
+        if x<=1:
+            print("invalid input")
             continue
+        if x == 2:
+            print("There is no prime number between 1 and 2, since 2 is the smallest prime number.")
         break
     except Exception:
-        print("invalid input!")
+        print("Invalid Input!")
 
-is_prime = True
 
 for i in range(2,x):
-    if x % i != 0:
-        is_prime = False
-        break
+    
+    is_prime = True
 
-if is_prime:
-    print("its  a prime number")
-else:
-    print("its not a prime number")
+    for j in range(2,i):
+        if  i % j == 0:
+            is_prime = False
+            break
+
+    if is_prime:
+        print(f"{i} is a prime number.")
+    
+
+
