@@ -1,14 +1,16 @@
-# to check whether the string is palindrome or not
+#given a list of numbers find all the paits that sums to a target
 
+a = [1,2,3,4,5]
+b = a
 
-# Check whether a string is a palindrome
+total = 0
 
-text = input("Enter a string: ")
+pairs = []
 
-# Convert to lowercase for case-insensitive comparison
-text = text.lower()
+for i in range(len(a)):
+    for j in range(len(b)):
+        total = a[i] + b[j]
+        if total == 5:
+            pairs.append((a[i],b[j]))
 
-if text == text[::-1]:
-    print("Palindrome")
-else:
-    print("Not a palindrome")
+print(pairs)
