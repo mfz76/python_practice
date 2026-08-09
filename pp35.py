@@ -9,4 +9,3 @@ if sorted(x) == sorted(y):
      print("its a anagram")
 else:
      print("its not a anagram.")
-        
